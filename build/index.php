@@ -44,7 +44,7 @@
     ?>
         
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <fieldset>
+            <fieldset id="portfolio-info">
                 <legend>1 First, name your portfolio</legend>
                 <ol>
                     <li> <!-- Portfolio Naming-->
@@ -57,7 +57,7 @@
                     </li> <!--END Portfolio Naming-->
                 </ol>
             </fieldset>
-            <fieldset>
+            <fieldset id="account-info">
                 <legend>2 Now, enter your account details</legend>
                 <ol>
                     <li> <!-- Account Details-->
@@ -70,7 +70,7 @@
                     </li> <!--END Account Details-->
                 </ol>
             </fieldset>
-            <fieldset>
+            <fieldset id="payment-info">
                 <legend>3 Finally, enter your payment information</legend>
                 <ol> 
                     <li> <!--Payment Info -->
