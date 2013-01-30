@@ -64,7 +64,7 @@
                         <br>
                         <label id="title2" for="Portfolio Address">Portfolio Address</label>
                         <br>
-                        <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="[A-Z]{3}[0-9]{4}" />
+                        <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" />
                         
                     </fieldset> <!-- END input-wrapper -->
                 </li> <!-- END portfolio-info -->
@@ -97,7 +97,38 @@
                         <label id="title6" for="Security Code">Security Code</label>
                         <br>
                         <input type="text" id="sec-code" name="cc-sec" minlength="2"/>
-                        <br>
+
+                        <fieldset>
+                           <legend>Choose a credit card type</legend>
+                        
+                           <ul>
+                               <li>
+                                   <label>
+                                       <input type="radio" name="credit-card" id="amex">
+                                       <span>American Express</span>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <input type="radio" name="credit-card" id="visa">
+                                       <span>Visa</span>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <input type="radio" name="credit-card" id="discover">
+                                       <span>Discover</span>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <input type="radio" name="credit-card" id="mastercard">
+                                       <span>Mastercard</span>
+                                   </label>
+                               </li>
+                           </ul>
+                        
+                        </fieldset>
                         <label id="title7" for="Expiration Date">Expiration Date</label>
                             <br>
                             <select name="cc-exp-month">
