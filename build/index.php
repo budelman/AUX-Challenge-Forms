@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>Sign up for Whoo!</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
         } else {
     ?>
         
-        <form id="sign-up-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <form id="sign-up-form" class="centered" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             
             <header id="signup-form-header">                
                 <h2>Sign up for Whoo!</h2>
@@ -62,7 +64,7 @@
                         <br>
                         <label id="title2" for="Portfolio Address">Portfolio Address</label>
                         <br>
-                        <input type="text" id="portfolio-address" name="address-slug" minlength="2"/>
+                        <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." required pattern="[A-Z]{3}[0-9]{4}" />
                         
                     </fieldset> <!-- END input-wrapper -->
                 </li> <!-- END portfolio-info -->
