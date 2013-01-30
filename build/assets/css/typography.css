@@ -23,10 +23,12 @@ h6 {
 }
 
 p {
+    font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+    font-size: 1.0em;
 }
 
-.formfield-titles {
+legend {
     font-family: 'Antic Slab', serif;
     color: #167893;
-    font-size: 1.5em;
+    font-size: 2.0em;
 }

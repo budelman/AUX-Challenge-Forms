@@ -57,54 +57,57 @@
                 <li id="portfolio-info">
                     <fieldset class="input-wrapper">
                         <legend id="step1" class="formfield-titles">First, name your portfolio</legend>
-                        
-                        <label id="title1" for="Portfolio Title">Portfolio Title</label>
-                        <br>
-                            <input type="text" id="portfolio-title" name="title" minlength="2"/>
-                            <br>
-                        
-                        <label id="title2" for="Portfolio Address">Portfolio Address</label>
-                        <br>
-                            <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" />
-                            <br>
-                        
+                        <ol>
+                            <li>
+                                <label id="title1" for="Portfolio Title">Portfolio Title</label>
+                                <br>
+                                <input type="text" id="portfolio-title" name="title" minlength="2"/>
+                            </li>
+                            <li>
+                                <label id="title2" for="Portfolio Address">Portfolio Address</label>
+                                <br>
+                                <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" />
+                            </li>
+                        </ol>
                     </fieldset> <!-- END input-wrapper -->
                 </li> <!-- END portfolio-info -->
                 
                 <li id="account-info">
                     <fieldset class="input-wrapper">
                         <legend id="step2" class="formfield-titles">Now, enter your account details</legend>
-                        
-                            <label id="title3" for="name">Name</label>
-                            <br>
+                        <ol>
+                            <li>
+                                <label id="title3" for="name">Name</label>
+                                <br>
                                 <input type="text" id="account-name" name="name" minlength="2"/>
+                            </li>
+                            <li>
+                                <label id="title4" for="name">E-mail</label>
                                 <br>
-                        
-                            <label id="title4" for="name">E-mail</label>
-                            <br>
                                 <input type="email" id="account-email" name="email" minlength="2"/>
-                                <br>
-                        
+                            </li>
+                        </ol>
                     </fieldset> <!-- END input-wrapper -->
                 </li> <!-- END account-info -->
                 
                 <li id="payment-info">
                     <fieldset class="input-wrapper">
                         <legend id="step3" class="formfield-titles">Finally, enter your payment information</legend>
-                        
-                        <a id="paypal-link" class="fr" href="https://www.paypal.com" title="click to use paypal instead">use paypal</a>
-                        <br>
-                        
-                        <label id="title5" for="Card Number">Card Number</label>
-                        <br>
-                            <input type="text" id="cc-num" name="cc-number" minlength="2"/>
-                            <br>
-                        
-                        <label id="title6" for="Security Code">Security Code</label>
-                        <br>
-                            <input type="text" id="sec-code" name="cc-sec" minlength="2"/>
-                            <br>
-                        
+                        <ol>
+                            <li>
+                                <a id="paypal-link" class="fr" href="https://www.paypal.com" title="click to use paypal instead">use paypal</a>
+                            </li>
+                            <li>
+                                <label id="title5" for="Card Number">Card Number</label>
+                                <br>
+                                <input type="text" id="cc-num" name="cc-number" minlength="2"/>
+                            </li>
+                            <li>
+                                <label id="title6" for="Security Code">Security Code</label>
+                                <br>
+                                <input type="text" id="sec-code" name="cc-sec" minlength="2"/>
+                            </li>
+                        <ol>
                         <fieldset>
                            <legend>Choose a credit card type</legend>
                         
@@ -134,7 +137,7 @@
                                    </label>
                                </li>
                            </ul>
-                        
+                                            
                         </fieldset>
                         <label id="title7" for="Expiration Date">Expiration Date</label>
                             <br>
