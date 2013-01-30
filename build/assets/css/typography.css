@@ -12,13 +12,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 3.6em;
-    color: #fff;
+    color: #f1fcff;
+    margin-bottom: 8px;
 }
 
 h6 {
+    font-family: "Lucida Grande", Arial, Verdana, sans-serif;
     font-size: 1.0em;
     color: #b3e3ff;
 }
 
 p {
+}
+
+.formfield-titles {
+    font-family: 'Antic Slab', serif;
+    color: #167893;
+    font-size: 1.5em;
 }

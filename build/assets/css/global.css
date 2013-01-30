@@ -1,4 +1,4 @@
-* { 
+* {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
@@ -29,18 +29,27 @@ body {
     background: -o-linear-gradient(top, #b3e3ff 0%,#abe0ff 97%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #b3e3ff 0%,#abe0ff 97%); /* IE10+ */
     background: linear-gradient(to bottom, #b3e3ff 0%,#abe0ff 97%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3e3ff', endColorstr='#abe0ff',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3e3ff', endColorstr='#abe0ff', GradientType=0 ); /* IE6-9 */
 }
 
 ol {
     list-style-type:decimal;
 }
 
+li {
+    padding: 20px;
+}
+
 fieldset {
+    display: block;
+    padding: 33px 40px;
+    border-radius: 6px;
+    background-color: #f3f5f5;
 }
 
 legend {
-    display:block;
+    display: inline-block;
+    margin: 20px 0px 10px 0px;
 }
 
 /* Clearfix Hack
@@ -84,19 +93,15 @@ _______________________________________________________*/
 }
 
 #signup-form-header {
-    padding-left: 40px;
 }
 
 #portfolio-info {
-    padding-left: 40px;
 }
 
 #account-info {
-    padding-left: 40px;
 }
 
 #payment-info {
-    padding-left: 40px;
 }
 
 #paypal-link {
@@ -146,6 +151,8 @@ _______________________________________________________*/
   margin-left: -300px; /* half of the width of the #sign-up-form */
 }
 
+.formfield-titles {
+}
 /* FORM VALIDATION _________________*/
 
 /*:invalid {
