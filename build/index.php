@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Sign up for Whoo!</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                         <br>
                         <label id="title2" for="Portfolio Address">Portfolio Address</label>
                         <br>
-                        <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." required pattern="[A-Z]{3}[0-9]{4}" />
+                        <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="[A-Z]{3}[0-9]{4}" />
                         
                     </fieldset> <!-- END input-wrapper -->
                 </li> <!-- END portfolio-info -->
