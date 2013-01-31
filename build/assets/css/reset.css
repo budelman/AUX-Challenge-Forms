@@ -113,12 +113,12 @@ _________________*/
  *    `:before` to contain the top-margins of child elements.
  */
 .cf:before,
-.cf:after {
+.cf:after, fieldset {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.cf:after {
+.cf:after, fieldset:after {
     clear: both;
 }
 
@@ -126,8 +126,13 @@ _________________*/
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf {
+.cf, .clearit {
     *zoom: 1;
+}
+.clearit {
+    clear:both;
+    height:0;
+    overflow:none;
 }
 
 

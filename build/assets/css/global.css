@@ -47,17 +47,21 @@ li {
 form {
     background: #b3e3ff; /* All browsers */
     margin: 15px auto;
+    padding: 0;
 }
 
 fieldset {
-    display: inline-block;
-    margin: 0 20px 20px 20px;
+    display: block;
+    margin: 0 20px 0px 20px;
+    padding: 0;
 }
 
 fieldset ol {
     padding: 35px 40px 10px 40px;
     border-radius: 6px;
     background-color: #f3f5f5;
+    width: 100%;
+    margin:0;
 }
 
 legend {
@@ -66,26 +70,34 @@ legend {
 }
 
 label {
+    display: block;
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
     font-size: 1.2em;
-    color: #333333;
+    color: #666666;
 }
 
 input {
+    display: block;
     height: 33px;
-    margin: 8px 0px 25px 0px;
-    border-radius: 6px;
+    margin: 0px 0px 25px 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.30);
+    border: none;
+    padding:0 8px;
 }
 
 ol {
     background: #fff;
     counter-reset: li; /* Initiate a counter */
     padding-top: 30px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px; 
 }
 ol > li {
     position: relative; /* Create a positioning context */
     list-style: none; /* Disable the normal item numbering */
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
 }
 ol > li:before {
     content: counter(li); /* Use the counter as content */
@@ -143,11 +155,17 @@ _______________________________________________________*/
 
 #account-info {
     padding: 0px 20px;
+    margin-bottom:30px;
 }
 
 #payment-info {
     padding: 0px 20px;
 }
+
+#payment-info li {
+    display: inline-block;
+}
+
 
 #paypal-link {
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
@@ -181,41 +199,48 @@ _______________________________________________________*/
 }
 
 #portfolio-address {
-    width: 440px;
+    width: 70%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-/* Style the Placeholder
-________________________________________________*/
-
-/* all */
-::-webkit-input-placeholder { color:#f00; }
-::-moz-placeholder { color:#f00; } /* firefox 19+ */
-:-ms-input-placeholder { color:#f00; } /* ie */
-input:-moz-placeholder { color:#f00; }
-
-/* individual: webkit */
-#field2::-webkit-input-placeholder { color:#00f; }
-#field3::-webkit-input-placeholder { color:#090; background:lightgreen; text-transform:uppercase; }
-#field4::-webkit-input-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; }
-
-/* individual: mozilla */
-#field2::-moz-placeholder { color:#00f; }
-#field3::-moz-placeholder { color:#090; background:lightgreen; text-transform:uppercase; }
-#field4::-moz-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; }
-
-/* End Placeholder Style 
-________________________________________________*/
+#sample-url {
+    float: right;
+    width: 30%;
+    padding:10px;
+    
+    position: relative;
+    bottom: 58px;
+    right: 1px;
+    
+    background-color: #fafafa;
+    text-align: center;
+    outline-color: #52a3d4;
+    
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.30);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #969696;
+    
+    margin: 0px;
+}
 
 #title3 {
 }
 
 #account-name {
+    width: 440px;  
 }
 
 #title4 {
 }
 
 #account-email {
+    width: 440px;
     margin-bottom: 6px;
 }
 
@@ -228,6 +253,7 @@ ________________________________________________*/
 }
 
 #account-password {
+    width: 440px;
 }
 
 #title6 {
@@ -237,7 +263,53 @@ ________________________________________________*/
 }
 
 #title7 {
+
 }
+
+#cc-num {
+
+}
+
+#cc-choices {
+
+}
+
+#amex {
+
+}
+#visa {
+
+}
+#discover {
+
+}
+#mastercard {
+
+}
+
+#title8 {
+
+}
+
+#sec-code {
+
+}
+
+#sec-code-hint {
+    background: url('../images/sprite.png') no-repeat 0 -374px;
+	width: 62px;
+	height: 32px;
+}
+
+#title9 {
+}
+
+#cc-exp-month {
+}
+
+#cc-exp-year {
+}
+
 
 #submit-portfolio {
     text-align:center;
@@ -251,7 +323,10 @@ ________________________________________________*/
 
 /* Classes
 _______________________________________________________*/
-
+.removed {
+    position: relative;
+    left: -9999px;
+}
 
 .block {
     display:block;

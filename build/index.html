@@ -31,10 +31,11 @@
                         <li>
                             <label id="title2" for="Portfolio Address">Portfolio Address</label>
                             <br>
-                            <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" />
+                            <input type="url" id="portfolio-address" name="address-slug" minlength="2" title="Numbers must consist of lowercase letters, numbers, and hyphens and periods only." pattern="" aria-required="true" />
+                            <div id="sample-url">.sample.com</div>
                         </li>
                     </ol>
-                </fieldset> <!-- END input-wrapper -->
+                </fieldset>
             </li> <!-- END portfolio-info -->
             
             <li id="account-info">
@@ -58,7 +59,7 @@
                             <input type="password" id="account-password" name="password" minlength="2"/>
                         </li>
                         <li>
-                            <label id="title6" for="show-password" class="block fl"><input type="checkbox" id="show-password" name="show-password" class="fl" /> Show Password</label>
+                            <label id="title6" for="show-password"><input type="checkbox" id="show-password" name="show-password" class="fl" /> Show Password</label>
                             <br>
                         </li>
                     </ol>
@@ -76,10 +77,10 @@
                         <li>
                             <label id="title7" for="Card Number">Card Number</label>
                             <br>
-                            <input type="text" id="cc-num" name="cc-number" minlength="2"/>
+                            <input type="text" id="cc-num" name="cc-number" minlength="2" pattern="[0-9]{13,16}"/>
                         </li>
                         <li>
-                           <ul>
+                           <ul id="cc-choices">
                                <li>
                                    <label>
                                        <input type="radio" name="credit-card" id="amex">
@@ -105,20 +106,19 @@
                                    </label>
                                </li>
                            </ul>
-                        </li>                    
+                        </li>
+                        <div class="clearit"></div>
                         <li>
-                            <label id="title8" for="Security Code">Security Code</label>
+                            <label id="title8" class="cf" for="Security Code">Security Code</label>
                             <br>
                             <input type="text" id="sec-code" name="cc-sec" minlength="2"/>
                         </li>
-                        <li id="sec-code-hint">
-                            <img src="assets/images/sprite.png" />
-                        </li>
-                    
+                        <li id="sec-code-hint"></li>
+                        <div class="clearit"></div>
                         <li>
                             <label id="title9" for="Expiration Date">Expiration Date</label>
-                            <br>
-                            <select name="cc-exp-month">
+
+                            <select name="cc-exp-month" id="cc-exp-month">
                                 <option disabled="disabled" selected="selected">Month</option>
                                 <option value="january">January</option>
                                 <option value="february">February</option>
@@ -134,7 +134,7 @@
                                 <option value="december">December</option>
                             </select>
         
-                            <select name="cc-exp-year">
+                            <select name="cc-exp-year" id="cc-exp-year">
                                 <option disabled="disabled" selected="selected">Year</option>
                                 <option value="2013">2013</option>
                                 <option value="2014">2014</option>
@@ -157,12 +157,12 @@
                             </select>
                         </li>
                     </ol>
-                </fieldset> <!-- END input-wrapper -->
+                </fieldset>
             </li> <!-- END payment-info -->
-        </ol> <!-- END Ordered List -->
         <div id="submit-portfolio">
             <button id="btn-submit-portfolio" type="submit" name="send">Create your portfolio</button>
         </div>
+        </ol> <!-- END Ordered List -->
     </form>
 
 <!-- Le javascript
