@@ -79,31 +79,25 @@
                             <br>
                             <input type="text" id="cc-num" name="cc-number" minlength="2" pattern="[0-9]{13,16}"/>
                         </li>
-                        <li>
-                           <ul id="cc-choices">
+                        <li id="cc-choices">
+                           <ul>
                                <li>
-                                   <label>
-                                       <input type="radio" name="credit-card" id="amex">
-                                       <span>American Express</span>
-                                   </label>
+                                    <input type="radio" name="credit-card" id="amex">
+                                    <label title="American Express" for="amex"></label>
                                </li>
                                <li>
-                                   <label>
-                                       <input type="radio" name="credit-card" id="visa">
-                                       <span>Visa</span>
-                                   </label>
+                                   <input type="radio" name="credit-card" id="visa">
+                                   <label title="Visa" for="visa"></label>
                                </li>
                                <li>
                                    <label>
                                        <input type="radio" name="credit-card" id="discover">
-                                       <span>Discover</span>
+                                       <label title="Discover" for="discover"></label>
                                    </label>
                                </li>
                                <li>
-                                   <label>
-                                       <input type="radio" name="credit-card" id="mastercard">
-                                       <span>Mastercard</span>
-                                   </label>
+                                   <input type="radio" name="credit-card" id="mastercard">
+                                   <label title="Mastercard" for="mastercard"></label>
                                </li>
                            </ul>
                         </li>
