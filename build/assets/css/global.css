@@ -11,7 +11,7 @@ html {
 header {
 	margin-top:15px;
     padding: 30px 40px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border: 1px #146c86 solid;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -50,7 +50,7 @@ form {
 }
 
 fieldset {
-    display: block;
+    display: inline-block;
     margin:0 20px;
 }
 
@@ -62,7 +62,7 @@ fieldset ol {
 
 legend {
     display: inline-block;
-    margin: 20px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 label {
@@ -89,15 +89,15 @@ _______________________________________________________*/
 }
 
 #portfolio-info {
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 #account-info {
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 #payment-info {
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 #paypal-link {
@@ -107,6 +107,9 @@ _______________________________________________________*/
     margin:10px 20px 0px 20px;
     position: relative;
     bottom: -17px;
+}
+
+#show-password {
 }
 
 #title1 {
@@ -146,6 +149,50 @@ _______________________________________________________*/
 .fr {
     float:right;
 }
+
+ol {
+    counter-reset: li; /* Initiate a counter */
+    margin-left: 0; /* Remove the default left margin */
+    padding-left: 0; /* Remove the default left padding */
+}
+ol > li {
+    position: relative; /* Create a positioning context */
+    margin-top: 15px; /* Give each list item a left margin to make room for the numbers */
+    list-style: none; /* Disable the normal item numbering */
+}
+ol > li:before {
+    content: counter(li); /* Use the counter as content */
+    counter-increment: li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position: absolute;
+    top: 4px;
+    left: -1.4em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 3.4em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    padding: 8px;
+	border-radius: 20px;
+    border: 6px #ffffff solid;
+    background-color: #52a3d4;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+ol li ol li, ol li ul li {
+    margin: 0px;
+    list-style: none;
+}
+
+ol li ol li:before {
+    content: none; /* Delete the counter as content */
+}
+
 
 /* FORM VALIDATION _________________*/
 
