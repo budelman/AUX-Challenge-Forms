@@ -171,6 +171,10 @@ input[type="radio"]:checked + label[for="mastercard"] {
     margin:0px 1px;
 }
 
+label[for="Expiration Date"] {
+    margin-bottom: 4px;
+}
+
 ol {
     background: #fff;
     counter-reset: li; /* Initiate a counter */
@@ -253,11 +257,15 @@ _______________________________________________________*/
 
 #paypal-link {
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
-    font-size: 0.7em;
+    font-size: 0.6em;
     margin: 0px 0px 0px 0px;
     position: relative;
     left: 70px;
     bottom: 15px;
+}
+
+#sec-code-input {
+    width: 80px;
 }
 
 #sec-code-hint {
@@ -322,12 +330,13 @@ _______________________________________________________*/
 #title6 {
     height: 20px;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 2.0em;
 }
 
 #show-password {
-    height: 20px;
-    width: 20px;
+    background: url('../images/sprite.png') no-repeat -1px -2px;
+	width: 17px;
+	height: 17px;
     margin-right: 5px;
 }
 
@@ -345,15 +354,27 @@ _______________________________________________________*/
     background: url('../images/sprite.png') no-repeat 0 -374px;
 	width: 62px;
 	height: 32px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 #title9 {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 #expiration-date {
     margin-bottom: 30px;
+}
+
+#exp-month {
+    width: 123px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#exp-year {
+    width: 66px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 #submit-portfolio {
@@ -369,6 +390,7 @@ _______________________________________________________*/
     border-style: none;
     color: #fff;
     font-size: 1.6em;
+    letter-spacing: 1px;
     margin: 0px 0px 40px 0px;
     background: -webkit-gradient(linear, center top, center bottom, from(#90a933), to(#7b992b));
     -moz-box-shadow: inset 0px 1px 2px #aaa;
@@ -381,9 +403,11 @@ _______________________________________________________*/
 _______________________________________________________*/
 
 .secure-checkout-icon {
-    background: url('../images/sprite.png') no-repeat 0 -374px;
-	width: 62px;
-	height: 32px;
+    background: url('../images/sprite.png') no-repeat -60px -499px;
+	width: 14px;
+	height: 19px;
+    top: 45px;
+    left: 28px;
 }
 
 .fl {
@@ -394,7 +418,21 @@ _______________________________________________________*/
     float:right;
 }
 
+.last-item {
+    margin-bottom: 28px;
+}
 
+.error-icon {
+    background: url('assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+}
+
+.success-icon {
+    background: url('assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+}
 
 /* FORM VALIDATION _________________*/
 
