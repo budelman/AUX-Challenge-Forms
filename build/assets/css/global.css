@@ -100,7 +100,7 @@ legend[for="credit-card"] {
 }
 
 label[for="amex"] {
-    background: url('../images/sprite.png') no-repeat 0 -206px;
+    background: url('../images/sprite.png') no-repeat 0px -206px;
     width: 45px;
     height: 32px;
     display:inline-block;
@@ -109,7 +109,7 @@ label[for="amex"] {
 }
 
 input[type="radio"]:checked + label[for="amex"] {
-    background: url('../images/sprite.png') no-repeat 0 -164px;
+    background: url('../images/sprite.png') no-repeat 0px -164px;
     width: 45px;
     height: 32px;
     display:inline-block;
